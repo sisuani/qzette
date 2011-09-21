@@ -1,0 +1,377 @@
+<ui version="4.0" >
+ <class>Configuration</class>
+ <widget class="QDialog" name="Configuration" >
+  <property name="windowModality" >
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>628</width>
+    <height>549</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Panel General</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset resource="../resources/qzette.qrc" >
+    <normaloff>:/app/images/app/generalpanel.png</normaloff>:/app/images/app/generalpanel.png</iconset>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_7" >
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_8" >
+     <item>
+      <widget class="QListWidget" name="lw_list" >
+       <property name="minimumSize" >
+        <size>
+         <width>96</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize" >
+        <size>
+         <width>96</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="editTriggers" >
+        <set>QAbstractItemView::NoEditTriggers</set>
+       </property>
+       <property name="showDropIndicator" stdset="0" >
+        <bool>false</bool>
+       </property>
+       <property name="iconSize" >
+        <size>
+         <width>64</width>
+         <height>64</height>
+        </size>
+       </property>
+       <property name="movement" >
+        <enum>QListView::Static</enum>
+       </property>
+       <property name="spacing" >
+        <number>10</number>
+       </property>
+       <property name="viewMode" >
+        <enum>QListView::IconMode</enum>
+       </property>
+       <property name="currentRow" >
+        <number>-1</number>
+       </property>
+       <item>
+        <property name="text" >
+         <string>Rubros</string>
+        </property>
+        <property name="icon" >
+         <iconset resource="../resources/qzette.qrc" >
+          <normaloff>:/app/images/app/area.png</normaloff>:/app/images/app/area.png</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text" >
+         <string>Categorias</string>
+        </property>
+        <property name="icon" >
+         <iconset resource="../resources/qzette.qrc" >
+          <normaloff>:/app/images/app/category.png</normaloff>:/app/images/app/category.png</iconset>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2" >
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2" >
+         <item>
+          <widget class="QLabel" name="lb_title" >
+           <property name="sizePolicy" >
+            <sizepolicy vsizetype="Preferred" hsizetype="Expanding" >
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="palette" >
+            <palette>
+             <active>
+              <colorrole role="Base" >
+               <brush brushstyle="SolidPattern" >
+                <color alpha="255" >
+                 <red>255</red>
+                 <green>255</green>
+                 <blue>255</blue>
+                </color>
+               </brush>
+              </colorrole>
+              <colorrole role="Window" >
+               <brush brushstyle="SolidPattern" >
+                <color alpha="255" >
+                 <red>255</red>
+                 <green>255</green>
+                 <blue>255</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </active>
+             <inactive>
+              <colorrole role="Base" >
+               <brush brushstyle="SolidPattern" >
+                <color alpha="255" >
+                 <red>255</red>
+                 <green>255</green>
+                 <blue>255</blue>
+                </color>
+               </brush>
+              </colorrole>
+              <colorrole role="Window" >
+               <brush brushstyle="SolidPattern" >
+                <color alpha="255" >
+                 <red>255</red>
+                 <green>255</green>
+                 <blue>255</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </inactive>
+             <disabled>
+              <colorrole role="Base" >
+               <brush brushstyle="SolidPattern" >
+                <color alpha="255" >
+                 <red>255</red>
+                 <green>255</green>
+                 <blue>255</blue>
+                </color>
+               </brush>
+              </colorrole>
+              <colorrole role="Window" >
+               <brush brushstyle="SolidPattern" >
+                <color alpha="255" >
+                 <red>255</red>
+                 <green>255</green>
+                 <blue>255</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </disabled>
+            </palette>
+           </property>
+           <property name="font" >
+            <font>
+             <family>Trebuchet MS</family>
+             <pointsize>15</pointsize>
+            </font>
+           </property>
+           <property name="autoFillBackground" >
+            <bool>true</bool>
+           </property>
+           <property name="frameShape" >
+            <enum>QFrame::Box</enum>
+           </property>
+           <property name="text" >
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="lb_icon" >
+           <property name="text" >
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QStackedWidget" name="sw_widgets" >
+         <property name="frameShape" >
+          <enum>QFrame::Box</enum>
+         </property>
+         <property name="currentIndex" >
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="page_0" >
+          <layout class="QHBoxLayout" name="horizontalLayout_3" >
+           <item>
+            <widget class="QListView" name="lv_area" >
+             <property name="alternatingRowColors" >
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_4" >
+             <item>
+              <widget class="QPushButton" name="pb_add_area" >
+               <property name="text" >
+                <string>&amp;Agregar</string>
+               </property>
+               <property name="icon" >
+                <iconset resource="../resources/qzette.qrc" >
+                 <normaloff>:/app/images/app/new.png</normaloff>:/app/images/app/new.png</iconset>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pb_remove_area" >
+               <property name="enabled" >
+                <bool>false</bool>
+               </property>
+               <property name="text" >
+                <string>Eliminar</string>
+               </property>
+               <property name="icon" >
+                <iconset resource="../resources/qzette.qrc" >
+                 <normaloff>:/app/images/app/remove.png</normaloff>:/app/images/app/remove.png</iconset>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pb_edit_area" >
+               <property name="enabled" >
+                <bool>false</bool>
+               </property>
+               <property name="text" >
+                <string>Editar   </string>
+               </property>
+               <property name="icon" >
+                <iconset resource="../resources/qzette.qrc" >
+                 <normaloff>:/app/images/app/edit.png</normaloff>:/app/images/app/edit.png</iconset>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer" >
+               <property name="orientation" >
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0" >
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="page_1" >
+          <layout class="QHBoxLayout" name="horizontalLayout_6" >
+           <item>
+            <widget class="QListView" name="lv_categories" >
+             <property name="alternatingRowColors" >
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_9" >
+             <item>
+              <widget class="QPushButton" name="pb_add_categories" >
+               <property name="text" >
+                <string>&amp;Agregar</string>
+               </property>
+               <property name="icon" >
+                <iconset resource="../resources/qzette.qrc" >
+                 <normaloff>:/app/images/app/new.png</normaloff>:/app/images/app/new.png</iconset>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pb_remove_categories" >
+               <property name="enabled" >
+                <bool>false</bool>
+               </property>
+               <property name="text" >
+                <string>Eliminar</string>
+               </property>
+               <property name="icon" >
+                <iconset resource="../resources/qzette.qrc" >
+                 <normaloff>:/app/images/app/remove.png</normaloff>:/app/images/app/remove.png</iconset>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pb_edit_categories" >
+               <property name="enabled" >
+                <bool>false</bool>
+               </property>
+               <property name="text" >
+                <string>Editar   </string>
+               </property>
+               <property name="icon" >
+                <iconset resource="../resources/qzette.qrc" >
+                 <normaloff>:/app/images/app/edit.png</normaloff>:/app/images/app/edit.png</iconset>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer_12" >
+               <property name="orientation" >
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0" >
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="Line" name="line" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout" >
+     <item>
+      <spacer name="horizontalSpacer" >
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0" >
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pb_close" >
+       <property name="text" >
+        <string>&amp;Cerrar</string>
+       </property>
+       <property name="icon" >
+        <iconset resource="../resources/qzette.qrc" >
+         <normaloff>:/icons/images/icons/close.png</normaloff>:/icons/images/icons/close.png</iconset>
+       </property>
+       <property name="default" >
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../resources/qzette.qrc" />
+ </resources>
+ <connections/>
+</ui>

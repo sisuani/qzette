@@ -1,0 +1,198 @@
+<ui version="4.0" >
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>751</width>
+    <height>515</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Zette - Sistema</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset resource="../resources/qzette.qrc" >
+    <normaloff>:/app/images/app/logo.png</normaloff>:/app/images/app/logo.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget" >
+   <layout class="QVBoxLayout" name="verticalLayout" >
+    <item>
+     <widget class="QMdiArea" name="mdiArea" />
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar" />
+  <widget class="QToolBar" name="toolBarTools" >
+   <property name="font" >
+    <font>
+     <pointsize>7</pointsize>
+    </font>
+   </property>
+   <property name="windowTitle" >
+    <string>Herramientas</string>
+   </property>
+   <property name="toolButtonStyle" >
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea" >
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak" >
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_EmployedManage" />
+   <addaction name="action_SupplierManage" />
+   <addaction name="action_CustomerManage" />
+   <addaction name="action_BuildingManage" />
+   <addaction name="action_ReceiptManage" />
+   <addaction name="separator" />
+   <addaction name="action_GeneralPanel" />
+  </widget>
+  <widget class="QMenuBar" name="menubar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>751</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_File" >
+    <property name="title" >
+     <string>&amp;Archivo</string>
+    </property>
+    <addaction name="separator" />
+    <addaction name="separator" />
+    <addaction name="action_Print" />
+    <addaction name="separator" />
+    <addaction name="action_Quit" />
+   </widget>
+   <widget class="QMenu" name="menu_Tools" >
+    <property name="title" >
+     <string>&amp;Herramientas</string>
+    </property>
+    <addaction name="separator" />
+    <addaction name="action_ReceiptManage" />
+    <addaction name="action_BuildingManage" />
+    <addaction name="action_CustomerManage" />
+    <addaction name="action_SupplierManage" />
+    <addaction name="action_EmployedManage" />
+    <addaction name="separator" />
+    <addaction name="action_GeneralPanel" />
+    <addaction name="separator" />
+   </widget>
+   <widget class="QMenu" name="menu_View" >
+    <property name="title" >
+     <string>&amp;Ver</string>
+    </property>
+    <widget class="QMenu" name="menuToolBar" >
+     <property name="title" >
+      <string>&amp;Barra de Herramientas</string>
+     </property>
+    </widget>
+    <addaction name="menuToolBar" />
+   </widget>
+   <widget class="QMenu" name="menu_Help" >
+    <property name="title" >
+     <string>?</string>
+    </property>
+    <addaction name="action_About" />
+   </widget>
+   <addaction name="menu_File" />
+   <addaction name="menu_View" />
+   <addaction name="menu_Tools" />
+   <addaction name="menu_Help" />
+  </widget>
+  <action name="action_Quit" >
+   <property name="icon" >
+    <iconset resource="../resources/qzette.qrc" >
+     <normaloff>:/icons/images/icons/quit.png</normaloff>:/icons/images/icons/quit.png</iconset>
+   </property>
+   <property name="text" >
+    <string>&amp;Salir</string>
+   </property>
+  </action>
+  <action name="action_ToolBar" >
+   <property name="text" >
+    <string>&amp;Barra de Herramientas</string>
+   </property>
+  </action>
+  <action name="action_About" >
+   <property name="text" >
+    <string>&amp;Acerca de...</string>
+   </property>
+  </action>
+  <action name="action_CustomerManage" >
+   <property name="icon" >
+    <iconset resource="../resources/qzette.qrc" >
+     <normaloff>:/app/images/app/customer.png</normaloff>:/app/images/app/customer.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Gestión de Clientes</string>
+   </property>
+  </action>
+  <action name="action_SupplierManage" >
+   <property name="icon" >
+    <iconset resource="../resources/qzette.qrc" >
+     <normaloff>:/app/images/app/supplier.png</normaloff>:/app/images/app/supplier.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Gestión de Proveedores</string>
+   </property>
+  </action>
+  <action name="action_GeneralPanel" >
+   <property name="icon" >
+    <iconset resource="../resources/qzette.qrc" >
+     <normaloff>:/app/images/app/generalpanel.png</normaloff>:/app/images/app/generalpanel.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Panel General</string>
+   </property>
+  </action>
+  <action name="action_EmployedManage" >
+   <property name="icon" >
+    <iconset resource="../resources/qzette.qrc" >
+     <normaloff>:/app/images/app/employed.png</normaloff>:/app/images/app/employed.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Gestión de Empleados</string>
+   </property>
+  </action>
+  <action name="action_BuildingManage" >
+   <property name="icon" >
+    <iconset resource="../resources/qzette.qrc" >
+     <normaloff>:/app/images/app/building.png</normaloff>:/app/images/app/building.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Gestión de Obras</string>
+   </property>
+  </action>
+  <action name="action_ReceiptManage" >
+   <property name="icon" >
+    <iconset resource="../resources/qzette.qrc" >
+     <normaloff>:/app/images/app/receipt.png</normaloff>:/app/images/app/receipt.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Gestión de Recibos</string>
+   </property>
+  </action>
+  <action name="action_Print" >
+   <property name="icon" >
+    <iconset resource="../resources/qzette.qrc" >
+     <normaloff>:/icons/images/icons/print.png</normaloff>:/icons/images/icons/print.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Imprimir...</string>
+   </property>
+   <property name="shortcut" >
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../resources/qzette.qrc" />
+ </resources>
+ <connections/>
+</ui>

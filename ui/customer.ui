@@ -1,0 +1,298 @@
+<ui version="4.0" >
+ <class>CustomerDlg</class>
+ <widget class="QDialog" name="CustomerDlg" >
+  <property name="windowModality" >
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>455</width>
+    <height>387</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Cliente</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset resource="../resources/qzette.qrc" >
+    <normaloff>:/app/images/app/customer.png</normaloff>:/app/images/app/customer.png</iconset>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" >
+   <item>
+    <widget class="QLabel" name="lb_title" >
+     <property name="palette" >
+      <palette>
+       <active>
+        <colorrole role="Base" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Window" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </active>
+       <inactive>
+        <colorrole role="Base" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Window" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </inactive>
+       <disabled>
+        <colorrole role="Base" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Window" >
+         <brush brushstyle="SolidPattern" >
+          <color alpha="255" >
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </disabled>
+      </palette>
+     </property>
+     <property name="font" >
+      <font>
+       <family>Trebuchet MS</family>
+       <pointsize>15</pointsize>
+      </font>
+     </property>
+     <property name="autoFillBackground" >
+      <bool>true</bool>
+     </property>
+     <property name="frameShape" >
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="text" >
+      <string>Cliente</string>
+     </property>
+     <property name="alignment" >
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox" >
+     <property name="font" >
+      <font>
+       <family>Trebuchet MS</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="title" >
+      <string/>
+     </property>
+     <property name="alignment" >
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="checked" >
+      <bool>false</bool>
+     </property>
+     <layout class="QGridLayout" name="gridLayout" >
+      <item row="8" column="1" >
+       <widget class="QLabel" name="lb_address" >
+        <property name="text" >
+         <string>Dirección</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="1" >
+       <widget class="QLineEdit" name="le_address" />
+      </item>
+      <item row="10" column="1" >
+       <widget class="QLabel" name="lb_location" >
+        <property name="text" >
+         <string>Localidad</string>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="1" >
+       <widget class="QLineEdit" name="le_location" >
+        <property name="text" >
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0" >
+       <widget class="QLineEdit" name="le_lastName" />
+      </item>
+      <item row="2" column="0" >
+       <widget class="QLabel" name="lb_lastname" >
+        <property name="text" >
+         <string>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'Trebuchet MS'; font-size:12pt; font-weight:400; font-style:normal;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">(&lt;span style=" color:#ff0000;">*&lt;/span>) Apellido&lt;/p>&lt;/body>&lt;/html></string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0" >
+       <widget class="QLabel" name="lb_name" >
+        <property name="text" >
+         <string>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'Trebuchet MS'; font-size:12pt; font-weight:400; font-style:normal;">
+&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Nombre&lt;/p>&lt;/body>&lt;/html></string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0" >
+       <widget class="QLineEdit" name="le_name" />
+      </item>
+      <item row="8" column="0" >
+       <widget class="QLabel" name="lb_email" >
+        <property name="text" >
+         <string>Email</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="0" >
+       <widget class="QLineEdit" name="le_email" />
+      </item>
+      <item row="5" column="1" >
+       <widget class="QLabel" name="lb_phone" >
+        <property name="text" >
+         <string>Teléfono fijo</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1" >
+       <widget class="QLabel" name="lb_cellphone" >
+        <property name="text" >
+         <string>Teléfono movil</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1" >
+       <widget class="QLineEdit" name="le_cellphone" />
+      </item>
+      <item row="7" column="1" >
+       <widget class="QLineEdit" name="le_phone" />
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label" >
+     <property name="text" >
+      <string>(&lt;font color='red'>*&lt;/font>) Datos obligatorios.</string>
+     </property>
+     <property name="alignment" >
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer" >
+     <property name="orientation" >
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0" >
+      <size>
+       <width>20</width>
+       <height>40</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <widget class="Line" name="line" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout" >
+     <item>
+      <spacer name="horizontalSpacer" >
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0" >
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pb_ok" >
+       <property name="text" >
+        <string>&amp;Aceptar</string>
+       </property>
+       <property name="icon" >
+        <iconset resource="../resources/qzette.qrc" >
+         <normaloff>:/icons/images/icons/ok.png</normaloff>:/icons/images/icons/ok.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pb_cancel" >
+       <property name="text" >
+        <string>&amp;Cancelar</string>
+       </property>
+       <property name="icon" >
+        <iconset resource="../resources/qzette.qrc" >
+         <normaloff>:/icons/images/icons/cancel.png</normaloff>:/icons/images/icons/cancel.png</iconset>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>le_lastName</tabstop>
+  <tabstop>le_name</tabstop>
+  <tabstop>le_email</tabstop>
+  <tabstop>le_cellphone</tabstop>
+  <tabstop>le_phone</tabstop>
+  <tabstop>le_address</tabstop>
+  <tabstop>le_location</tabstop>
+  <tabstop>pb_ok</tabstop>
+  <tabstop>pb_cancel</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../resources/qzette.qrc" />
+ </resources>
+ <connections/>
+</ui>

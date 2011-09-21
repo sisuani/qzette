@@ -1,0 +1,261 @@
+<ui version="4.0" >
+ <class>CustomerManage</class>
+ <widget class="QWidget" name="CustomerManage" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>710</width>
+    <height>491</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Gestión de Clientes</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset resource="../resources/qzette.qrc" >
+    <normaloff>:/app/images/app/customer.png</normaloff>:/app/images/app/customer.png</iconset>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout" >
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2" >
+     <item>
+      <widget class="QLabel" name="lb_search" >
+       <property name="text" >
+        <string>Buscar:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="le_filter" />
+     </item>
+     <item>
+      <spacer name="horizontalSpacer" >
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType" >
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0" >
+        <size>
+         <width>77</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout" >
+     <item>
+      <widget class="QTableView" name="tv_customer" >
+       <property name="editTriggers" >
+        <set>QAbstractItemView::NoEditTriggers</set>
+       </property>
+       <property name="tabKeyNavigation" >
+        <bool>false</bool>
+       </property>
+       <property name="alternatingRowColors" >
+        <bool>true</bool>
+       </property>
+       <property name="selectionMode" >
+        <enum>QAbstractItemView::SingleSelection</enum>
+       </property>
+       <property name="selectionBehavior" >
+        <enum>QAbstractItemView::SelectRows</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="Line" name="line" >
+       <property name="orientation" >
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="_2" >
+       <item>
+        <widget class="QToolButton" name="tb_add" >
+         <property name="sizePolicy" >
+          <sizepolicy vsizetype="Preferred" hsizetype="Preferred" >
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font" >
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text" >
+          <string>Alta</string>
+         </property>
+         <property name="icon" >
+          <iconset resource="../resources/qzette.qrc" >
+           <normaloff>:/app/images/app/new.png</normaloff>:/app/images/app/new.png</iconset>
+         </property>
+         <property name="iconSize" >
+          <size>
+           <width>24</width>
+           <height>24</height>
+          </size>
+         </property>
+         <property name="shortcut" >
+          <string>F3</string>
+         </property>
+         <property name="toolButtonStyle" >
+          <enum>Qt::ToolButtonTextUnderIcon</enum>
+         </property>
+         <property name="autoRaise" >
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="tb_remove" >
+         <property name="sizePolicy" >
+          <sizepolicy vsizetype="Preferred" hsizetype="Preferred" >
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font" >
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text" >
+          <string>Baja</string>
+         </property>
+         <property name="icon" >
+          <iconset resource="../resources/qzette.qrc" >
+           <normaloff>:/app/images/app/remove.png</normaloff>:/app/images/app/remove.png</iconset>
+         </property>
+         <property name="iconSize" >
+          <size>
+           <width>24</width>
+           <height>24</height>
+          </size>
+         </property>
+         <property name="shortcut" >
+          <string>F5</string>
+         </property>
+         <property name="toolButtonStyle" >
+          <enum>Qt::ToolButtonTextUnderIcon</enum>
+         </property>
+         <property name="autoRaise" >
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="tb_edit" >
+         <property name="enabled" >
+          <bool>true</bool>
+         </property>
+         <property name="sizePolicy" >
+          <sizepolicy vsizetype="Preferred" hsizetype="Preferred" >
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font" >
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text" >
+          <string>&amp;Modificar</string>
+         </property>
+         <property name="icon" >
+          <iconset resource="../resources/qzette.qrc" >
+           <normaloff>:/app/images/app/edit.png</normaloff>:/app/images/app/edit.png</iconset>
+         </property>
+         <property name="iconSize" >
+          <size>
+           <width>24</width>
+           <height>24</height>
+          </size>
+         </property>
+         <property name="shortcut" >
+          <string>F2</string>
+         </property>
+         <property name="toolButtonStyle" >
+          <enum>Qt::ToolButtonTextUnderIcon</enum>
+         </property>
+         <property name="autoRaise" >
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="Line" name="line_2" >
+         <property name="orientation" >
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QToolButton" name="tb_close" >
+         <property name="sizePolicy" >
+          <sizepolicy vsizetype="Preferred" hsizetype="Preferred" >
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font" >
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="text" >
+          <string>Ce&amp;rrar</string>
+         </property>
+         <property name="icon" >
+          <iconset resource="../resources/qzette.qrc" >
+           <normaloff>:/app/images/app/close.png</normaloff>:/app/images/app/close.png</iconset>
+         </property>
+         <property name="iconSize" >
+          <size>
+           <width>24</width>
+           <height>24</height>
+          </size>
+         </property>
+         <property name="shortcut" >
+          <string>F12</string>
+         </property>
+         <property name="toolButtonStyle" >
+          <enum>Qt::ToolButtonTextUnderIcon</enum>
+         </property>
+         <property name="autoRaise" >
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer>
+         <property name="orientation" >
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0" >
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../resources/qzette.qrc" />
+ </resources>
+ <connections/>
+</ui>
